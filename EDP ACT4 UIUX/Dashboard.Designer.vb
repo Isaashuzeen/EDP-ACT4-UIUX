@@ -23,6 +23,7 @@ Partial Class Form3
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Button7 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
@@ -30,7 +31,6 @@ Partial Class Form3
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button7 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -51,6 +51,19 @@ Partial Class Form3
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(186, 450)
         Me.Panel1.TabIndex = 0
+        '
+        'Button7
+        '
+        Me.Button7.BackColor = System.Drawing.Color.LightSeaGreen
+        Me.Button7.FlatAppearance.BorderSize = 0
+        Me.Button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CadetBlue
+        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button7.Location = New System.Drawing.Point(-1, 87)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(186, 43)
+        Me.Button7.TabIndex = 7
+        Me.Button7.Text = "Add Table"
+        Me.Button7.UseVisualStyleBackColor = False
         '
         'Button6
         '
@@ -140,19 +153,6 @@ Partial Class Form3
         Me.Label1.Size = New System.Drawing.Size(149, 43)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Dashboard"
-        '
-        'Button7
-        '
-        Me.Button7.BackColor = System.Drawing.Color.LightSeaGreen
-        Me.Button7.FlatAppearance.BorderSize = 0
-        Me.Button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CadetBlue
-        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button7.Location = New System.Drawing.Point(-1, 87)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(186, 43)
-        Me.Button7.TabIndex = 7
-        Me.Button7.Text = "Add Table"
-        Me.Button7.UseVisualStyleBackColor = False
         '
         'Form3
         '

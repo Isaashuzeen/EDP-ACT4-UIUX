@@ -7,8 +7,12 @@
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
-        Me.Hide()
-        Form1.Show()
+        Dim result As DialogResult = MessageBox.Show("Are you sure you want to log out?", "Log out", MessageBoxButtons.YesNo)
+        ' If the user clicks "Yes", close the current form
+        If result = DialogResult.Yes Then
+            Me.Close()
+            Form1.Show()
+        End If
 
     End Sub
 

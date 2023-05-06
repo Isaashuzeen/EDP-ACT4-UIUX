@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form5
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,19 +20,22 @@ Partial Class Form5
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Panel2.SuspendLayout()
         Me.Panel1.SuspendLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel2
@@ -40,7 +43,6 @@ Partial Class Form5
         Me.Panel2.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.Panel2.Controls.Add(Me.Button5)
         Me.Panel2.Controls.Add(Me.Button1)
-        Me.Panel2.Controls.Add(Me.Button4)
         Me.Panel2.Controls.Add(Me.Button3)
         Me.Panel2.Controls.Add(Me.Button2)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Left
@@ -55,7 +57,7 @@ Partial Class Form5
         Me.Button5.FlatAppearance.BorderSize = 0
         Me.Button5.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.Location = New System.Drawing.Point(0, 224)
+        Me.Button5.Location = New System.Drawing.Point(0, 208)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(191, 36)
         Me.Button5.TabIndex = 10
@@ -69,25 +71,12 @@ Partial Class Form5
         Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(0, 266)
+        Me.Button1.Location = New System.Drawing.Point(0, 250)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(191, 36)
         Me.Button1.TabIndex = 1
         Me.Button1.Text = "Return"
         Me.Button1.UseVisualStyleBackColor = False
-        '
-        'Button4
-        '
-        Me.Button4.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.Button4.FlatAppearance.BorderSize = 0
-        Me.Button4.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Location = New System.Drawing.Point(0, 182)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(191, 36)
-        Me.Button4.TabIndex = 9
-        Me.Button4.Text = "Insert"
-        Me.Button4.UseVisualStyleBackColor = False
         '
         'Button3
         '
@@ -95,7 +84,7 @@ Partial Class Form5
         Me.Button3.FlatAppearance.BorderSize = 0
         Me.Button3.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Location = New System.Drawing.Point(0, 140)
+        Me.Button3.Location = New System.Drawing.Point(-3, 166)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(191, 36)
         Me.Button3.TabIndex = 8
@@ -108,7 +97,7 @@ Partial Class Form5
         Me.Button2.FlatAppearance.BorderSize = 0
         Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Location = New System.Drawing.Point(0, 98)
+        Me.Button2.Location = New System.Drawing.Point(-3, 124)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(191, 36)
         Me.Button2.TabIndex = 7
@@ -127,6 +116,9 @@ Partial Class Form5
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.MediumSlateBlue
+        Me.Panel1.Controls.Add(Me.Button7)
+        Me.Panel1.Controls.Add(Me.Button6)
+        Me.Panel1.Controls.Add(Me.Button4)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
@@ -134,14 +126,62 @@ Partial Class Form5
         Me.Panel1.Size = New System.Drawing.Size(800, 59)
         Me.Panel1.TabIndex = 2
         '
-        'Panel3
+        'Button7
         '
-        Me.Panel3.BackgroundImage = Global.EDP_ACT4_UIUX.My.Resources.Resources.images__1_
-        Me.Panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Panel3.Location = New System.Drawing.Point(325, 122)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(315, 266)
-        Me.Panel3.TabIndex = 4
+        Me.Button7.BackColor = System.Drawing.Color.MediumSlateBlue
+        Me.Button7.BackgroundImage = Global.EDP_ACT4_UIUX.My.Resources.Resources.printer
+        Me.Button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button7.FlatAppearance.BorderColor = System.Drawing.Color.Azure
+        Me.Button7.FlatAppearance.BorderSize = 0
+        Me.Button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue
+        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button7.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button7.Location = New System.Drawing.Point(675, 24)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(29, 28)
+        Me.Button7.TabIndex = 10
+        Me.Button7.UseVisualStyleBackColor = False
+        '
+        'Button6
+        '
+        Me.Button6.BackColor = System.Drawing.Color.MediumSlateBlue
+        Me.Button6.BackgroundImage = Global.EDP_ACT4_UIUX.My.Resources.Resources.logout
+        Me.Button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button6.FlatAppearance.BorderColor = System.Drawing.Color.Red
+        Me.Button6.FlatAppearance.BorderSize = 0
+        Me.Button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red
+        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button6.Location = New System.Drawing.Point(752, 24)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(36, 28)
+        Me.Button6.TabIndex = 9
+        Me.Button6.UseVisualStyleBackColor = False
+        '
+        'Button4
+        '
+        Me.Button4.BackColor = System.Drawing.Color.MediumSlateBlue
+        Me.Button4.BackgroundImage = Global.EDP_ACT4_UIUX.My.Resources.Resources.refresh
+        Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button4.FlatAppearance.BorderColor = System.Drawing.Color.Azure
+        Me.Button4.FlatAppearance.BorderSize = 0
+        Me.Button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button4.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button4.Location = New System.Drawing.Point(710, 24)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(36, 28)
+        Me.Button4.TabIndex = 8
+        Me.Button4.UseVisualStyleBackColor = False
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.DataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLightLight
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(197, 65)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.Size = New System.Drawing.Size(591, 373)
+        Me.DataGridView1.TabIndex = 4
         '
         'Form5
         '
@@ -149,13 +189,14 @@ Partial Class Form5
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Panel3)
+        Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "Form5"
         Me.Text = "Equipments"
         Me.Panel2.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -165,8 +206,10 @@ Partial Class Form5
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Button1 As Button
     Friend WithEvents Button5 As Button
-    Friend WithEvents Button4 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
-    Friend WithEvents Panel3 As Panel
+    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents Button6 As Button
+    Friend WithEvents Button4 As Button
+    Friend WithEvents Button7 As Button
 End Class

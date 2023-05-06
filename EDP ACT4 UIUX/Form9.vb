@@ -88,4 +88,14 @@ Public Class Form9
         End If
 
     End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Dim result As DialogResult = MessageBox.Show("Are you sure you want to log out?", "Log out", MessageBoxButtons.YesNo)
+        ' If the user clicks "Yes", close the current form
+        If result = DialogResult.Yes Then
+            Me.Close()
+            Form1.Show()
+        End If
+    End Sub
+
 End Class

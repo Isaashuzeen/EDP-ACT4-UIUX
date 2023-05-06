@@ -48,17 +48,18 @@ Partial Class Form2
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(277, 450)
+        Me.Panel1.Size = New System.Drawing.Size(271, 450)
         Me.Panel1.TabIndex = 0
         '
         'Button2
         '
+        Me.Button2.BackColor = System.Drawing.Color.Transparent
         Me.Button2.Location = New System.Drawing.Point(119, 271)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(88, 23)
         Me.Button2.TabIndex = 7
         Me.Button2.Text = "Canel"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Button2.UseVisualStyleBackColor = False
         '
         'Label3
         '
@@ -92,17 +93,18 @@ Partial Class Form2
         '
         'Button1
         '
+        Me.Button1.BackColor = System.Drawing.Color.Transparent
         Me.Button1.Location = New System.Drawing.Point(28, 271)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(85, 24)
         Me.Button1.TabIndex = 3
         Me.Button1.Text = "Add User"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'ConfirmPassword
         '
         Me.ConfirmPassword.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.ConfirmPassword.Location = New System.Drawing.Point(28, 216)
+        Me.ConfirmPassword.Location = New System.Drawing.Point(28, 177)
         Me.ConfirmPassword.Name = "ConfirmPassword"
         Me.ConfirmPassword.Size = New System.Drawing.Size(179, 20)
         Me.ConfirmPassword.TabIndex = 2
@@ -111,7 +113,7 @@ Partial Class Form2
         'Password
         '
         Me.Password.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Password.Location = New System.Drawing.Point(28, 171)
+        Me.Password.Location = New System.Drawing.Point(28, 222)
         Me.Password.Name = "Password"
         Me.Password.Size = New System.Drawing.Size(179, 20)
         Me.Password.TabIndex = 2
