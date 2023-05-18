@@ -112,4 +112,54 @@ Public Class Form6
             GC.Collect()
         End Try
     End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        AddPatient.Show()
+
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        EditPatient.Show()
+
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        With Me
+            Call Connect_to_DB()
+            Dim mycmd As New MySqlCommand
+
+            ' Prompt the user for the patient ID to delete
+            Dim patientID As String = ""
+            Do While String.IsNullOrEmpty(patientID)
+                patientID = InputBox("Enter the ID of the patient record you want to delete:")
+                If patientID = "" Then
+                    Exit Do ' Exit the loop if the user clicks the Cancel button
+                End If
+            Loop
+
+            ' Check if the patient ID exists in the table
+            If Not String.IsNullOrEmpty(patientID) Then
+                strSQL = "SELECT COUNT(*) FROM patients WHERE id_patient = '" & patientID & "';"
+                mycmd.CommandText = strSQL
+                mycmd.Connection = myconn
+                Dim count As Integer = Convert.ToInt32(mycmd.ExecuteScalar())
+
+                ' Delete the record with the specified patient ID if it exists
+                If count > 0 Then
+                    strSQL = "DELETE FROM patients WHERE id_patient = '" & patientID & "';"
+                    mycmd.CommandText = strSQL
+                    mycmd.Connection = myconn
+                    If mycmd.ExecuteNonQuery() > 0 Then
+                        MessageBox.Show("Record Deleted")
+                    Else
+                        MessageBox.Show("Error deleting record")
+                    End If
+                Else
+                    MessageBox.Show("Record does not exist")
+                End If
+            End If
+
+            Call Disconnect_to_DB()
+        End With
+    End Sub
 End Class

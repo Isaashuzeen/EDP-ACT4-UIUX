@@ -8,7 +8,7 @@ Public Class Form4
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-
+        AddFormCheckUp.Show()
     End Sub
 
     Private Sub Form4_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -72,24 +72,24 @@ Public Class Form4
             Dim mycmd As New MySqlCommand
 
             ' Prompt the user for the checkup ID to delete
-            Dim checkupId As String = ""
-            Do While String.IsNullOrEmpty(checkupId)
-                checkupId = InputBox("Enter the ID no. of the Record you want to delete:")
-                If checkupId = "" Then
+            Dim checkupID As String = ""
+            Do While String.IsNullOrEmpty(checkupID)
+                checkupID = InputBox("Enter the ID of the checkup record you want to delete:")
+                If checkupID = "" Then
                     Exit Do ' Exit the loop if the user clicks the Cancel button
                 End If
             Loop
 
             ' Check if the checkup ID exists in the table
-            If Not String.IsNullOrEmpty(checkupId) Then
-                strSQL = "SELECT COUNT(*) FROM check_up WHERE checkup_id = '" & checkupId & "';"
+            If Not String.IsNullOrEmpty(checkupID) Then
+                strSQL = "SELECT COUNT(*) FROM check_up WHERE checkup_id = '" & checkupID & "';"
                 mycmd.CommandText = strSQL
                 mycmd.Connection = myconn
                 Dim count As Integer = Convert.ToInt32(mycmd.ExecuteScalar())
 
                 ' Delete the record with the specified checkup ID if it exists
                 If count > 0 Then
-                    strSQL = "DELETE FROM check_up WHERE checkup_id = '" & checkupId & "';"
+                    strSQL = "DELETE FROM check_up WHERE checkup_id = '" & checkupID & "';"
                     mycmd.CommandText = strSQL
                     mycmd.Connection = myconn
                     If mycmd.ExecuteNonQuery() > 0 Then
@@ -154,5 +154,9 @@ Public Class Form4
         Finally
             GC.Collect()
         End Try
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        EditFormCheckUp.Show()
     End Sub
 End Class

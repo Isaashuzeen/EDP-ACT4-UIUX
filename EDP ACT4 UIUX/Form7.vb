@@ -101,30 +101,7 @@ Public Class Form7
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        With Me
-            Call Connect_to_DB()
-            Dim mycmd As New MySqlCommand
-            Dim myreader As MySqlDataReader
-
-            strSQL = "INSERT INTO medicines (id_med, med_name, quantity, available_quantity, descrption, expiry_date, requested_date) VALUES ('""', '""', '""', '""', '""', '""', '""');"
-            'MsgBox(strSQL)
-            mycmd.CommandText = strSQL
-                mycmd.Connection = myconn
-
-                myreader = mycmd.ExecuteReader
-            If myreader.HasRows Then
-                MessageBox.Show("Record Successfully Added")
-
-            Else
-                MessageBox.Show("Invalid Input")
-            End If
-            Call Disconnect_to_DB()
-
-            'id no. can be repeated and sorted again
-            'create a trigger that deletes a record from patients and delete the record from check_up, 
-            'TRIGGER after Delete
-            'Form with text box of each columns from medicines table
-        End With
+        Addmed.Show()
     End Sub
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
@@ -174,5 +151,9 @@ Public Class Form7
         Finally
             GC.Collect()
         End Try
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        EditMed.Show()
     End Sub
 End Class

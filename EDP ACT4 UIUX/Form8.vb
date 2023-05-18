@@ -109,4 +109,9 @@ Public Class Form8
             GC.Collect()
         End Try
     End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        EditTreatment.Show()
+    End Sub
+
 End Class

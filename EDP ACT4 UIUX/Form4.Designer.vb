@@ -23,9 +23,6 @@ Partial Class Form4
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Button5 = New System.Windows.Forms.Button()
@@ -33,6 +30,9 @@ Partial Class Form4
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -50,53 +50,6 @@ Partial Class Form4
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(867, 59)
         Me.Panel1.TabIndex = 0
-        '
-        'Button7
-        '
-        Me.Button7.BackColor = System.Drawing.Color.BurlyWood
-        Me.Button7.BackgroundImage = Global.EDP_ACT4_UIUX.My.Resources.Resources.printer
-        Me.Button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button7.FlatAppearance.BorderColor = System.Drawing.Color.Azure
-        Me.Button7.FlatAppearance.BorderSize = 0
-        Me.Button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue
-        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button7.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Button7.Location = New System.Drawing.Point(742, 27)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(29, 28)
-        Me.Button7.TabIndex = 11
-        Me.Button7.UseVisualStyleBackColor = False
-        '
-        'Button6
-        '
-        Me.Button6.BackColor = System.Drawing.Color.BurlyWood
-        Me.Button6.BackgroundImage = Global.EDP_ACT4_UIUX.My.Resources.Resources.logout
-        Me.Button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button6.FlatAppearance.BorderColor = System.Drawing.Color.Red
-        Me.Button6.FlatAppearance.BorderSize = 0
-        Me.Button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red
-        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button6.Location = New System.Drawing.Point(819, 27)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(36, 28)
-        Me.Button6.TabIndex = 11
-        Me.Button6.UseVisualStyleBackColor = False
-        '
-        'Button4
-        '
-        Me.Button4.BackColor = System.Drawing.Color.BurlyWood
-        Me.Button4.BackgroundImage = Global.EDP_ACT4_UIUX.My.Resources.Resources.refresh
-        Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button4.FlatAppearance.BorderColor = System.Drawing.Color.Azure
-        Me.Button4.FlatAppearance.BorderSize = 0
-        Me.Button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Button4.Location = New System.Drawing.Point(777, 27)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(36, 28)
-        Me.Button4.TabIndex = 10
-        Me.Button4.UseVisualStyleBackColor = False
         '
         'Label1
         '
@@ -181,6 +134,53 @@ Partial Class Form4
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(658, 414)
         Me.DataGridView1.TabIndex = 2
+        '
+        'Button7
+        '
+        Me.Button7.BackColor = System.Drawing.Color.BurlyWood
+        Me.Button7.BackgroundImage = Global.EDP_ACT4_UIUX.My.Resources.Resources.printer
+        Me.Button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button7.FlatAppearance.BorderColor = System.Drawing.Color.Azure
+        Me.Button7.FlatAppearance.BorderSize = 0
+        Me.Button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue
+        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button7.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button7.Location = New System.Drawing.Point(742, 27)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(29, 28)
+        Me.Button7.TabIndex = 11
+        Me.Button7.UseVisualStyleBackColor = False
+        '
+        'Button6
+        '
+        Me.Button6.BackColor = System.Drawing.Color.BurlyWood
+        Me.Button6.BackgroundImage = Global.EDP_ACT4_UIUX.My.Resources.Resources.logout
+        Me.Button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button6.FlatAppearance.BorderColor = System.Drawing.Color.Red
+        Me.Button6.FlatAppearance.BorderSize = 0
+        Me.Button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red
+        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button6.Location = New System.Drawing.Point(819, 27)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(36, 28)
+        Me.Button6.TabIndex = 11
+        Me.Button6.UseVisualStyleBackColor = False
+        '
+        'Button4
+        '
+        Me.Button4.BackColor = System.Drawing.Color.BurlyWood
+        Me.Button4.BackgroundImage = Global.EDP_ACT4_UIUX.My.Resources.Resources.refresh
+        Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button4.FlatAppearance.BorderColor = System.Drawing.Color.Azure
+        Me.Button4.FlatAppearance.BorderSize = 0
+        Me.Button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button4.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button4.Location = New System.Drawing.Point(777, 27)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(36, 28)
+        Me.Button4.TabIndex = 10
+        Me.Button4.UseVisualStyleBackColor = False
         '
         'Form4
         '

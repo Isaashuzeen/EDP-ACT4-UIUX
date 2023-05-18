@@ -65,7 +65,7 @@ Module Module_public
             .Borders(Excel.XlBordersIndex.xlEdgeRight).LineStyle = Excel.XlLineStyle.xlContinuous
         End With
 
-        'xlsSheet.Cells(1, 1) = "Mike"
+        'xlsSheet.Cells(1, 1) = "excel"
         templatefilename = templatefilename.Replace(".xlsx", "")
         templatefilename = templatefilename.Replace(".xls", "")
         Dim myfilename As String = templatefilename & " " & currentDate.ToString("mm-dd-yy hh-mm-ss") & ".xlsx"

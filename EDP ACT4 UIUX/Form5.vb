@@ -153,4 +153,12 @@ Public Class Form5
             GC.Collect()
         End Try
     End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        AddEquipment.Show()
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        EditEquipment.Show()
+    End Sub
 End Class
