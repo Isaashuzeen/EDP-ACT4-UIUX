@@ -14,7 +14,6 @@ Public Class Form2
             If String.IsNullOrEmpty(username) OrElse String.IsNullOrEmpty(password) OrElse String.IsNullOrEmpty(confirmPassword) Then
                 MessageBox.Show("Please Enter your Username and Password")
                 .Show()
-
                 Exit Sub
             End If
 

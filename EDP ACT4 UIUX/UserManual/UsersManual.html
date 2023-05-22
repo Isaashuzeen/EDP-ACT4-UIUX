@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User's Manual</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 100px;
+        }
+
+        h1 {
+            text-align: left;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .image {
+            text-align: center;
+            margin-right: 40px;
+            margin-left: 40px;
+        }
+
+        .image img {
+            max-width: 100%;
+            max-height: 400px;
+            margin-bottom: 10px;
+        }
+        .image-grid {
+          display: flex;
+          justify-content: center;
+      }
+
+      .image {
+          text-align: center;
+          margin-right: 10px;
+      }
+
+      .image:last-child {
+          margin-right: 0;
+      }
+
+  </style>
+</head>
+<body>
+    <h1>User's Manual: Hospital Manangement System</h1>
+
+    <div class="section">
+        <div class="section-title">1: Log In Page</div>
+        <p>The login process is a fundamental step that allows you to access the system and personalize your experience. Requires to input username and password.</p>
+        <p>If user don't have an account, You can click the add user accout to create yours.</p>
+        <div class="image">
+            <img src="Log in.PNG" alt="Image 1">
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">2: Add User Account</div>
+        <p>In this section, The user is required to input his/her desired Username, Password and Confirm the password then click Add user button.</p>
+        <p>Click Cancel button if user changed his
+        mind or to return to the log in page.</p>
+        <div class="image">
+            <img src="Add User Account.PNG" alt="Image 2">
+        </div>
+    </div>  
+
+    <div class="section">
+        <div class="section-title">2: Dashboard</div>
+        <p>The dashboard page serves as a central hub within the system, providing users with an overview of important data and information.</p> Dashboard contains the following pages.
+        <ul>
+            <li>Add Table &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- View Add table form and Back_Up action.</li>
+            <li>Check_Up &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- View the Check_Up form.</li>
+            <li>Equipments &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- View the Equipments form.</li>
+            <li>Patients &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- View the Patients form.</li>
+            <li>Medicines &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- View the Medineces form</li>
+            <li>Treatment Type  - View the Treatment Type form.</li>
+            <li>Back to Log In &nbsp&nbsp- Allows user to go back to Log in page upon clicking.</li>
+        </ul>
+        <div class="image">
+            <img src="Dashboard.PNG" alt="Image 2">
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">3: Add CSV File</div>
+        <p>In the Add CSV Form, the user can import a csv file and will be displayed in the datagrid of the form.</p>
+        <div class="image">
+            <img src="Add table.PNG" alt="Image 2">
+        </div>
+
+    </div>
+
+    <div class="section">
+        <div class="section-title">4: Save Back Up</div>
+        <p>Back Up button backs up the database and saves it in the chosen directory of the user.</p>
+        <div class="image">
+            <img src="SaveBackup.PNG" alt="Image 2">
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">5: Buttons</div>
+        <p>Utility Buttons, helps user to export,refresh and log out.</p>
+        <div class="image-grid">
+            <div class="image">
+                <img src="printer.png" alt="Image 3" width="50" height="50" margin-right="10">
+                <p class="image-description"><b>Print/Export button</b></p>
+            </div>
+            <div class="image">
+                <img src="refresh.png" alt="Image 4" width="50" height="50" margin-right="10">
+                <p class="image-description"><b>Refresh button</b></p>
+            </div>
+            <div class="image">
+                <img src="logout.png" alt="Image 4" width="50" height="50" margin-right="10">
+                <p class="image-description"><b>Log Out button</b></p>
+            </div>
+        </div>
+        <ul>
+            <li>The first button is print or export, this open the microsoft excel containing the template and table present in the form.</li>
+            <li>The second button is Refresh, it reloads the datagrid after performing and action such as adding records.</li>
+            <li>The third button is log out, After clicking the log out button the user will be returned to the log in page</li>
+        </ul>
+
+        <div class="section">
+            <div class="section-title">6: Check Up Page</div>
+            <p>Stores records of medical check-ups or examinations performed in the system, allowing for easy tracking and retrieval of patient visit information.</p>
+            <div class="image">
+                <img src="check up.PNG" alt="Image 2">
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="image-grid">
+                <div class="image">
+                    <img src="addcheckup.PNG" alt="Image 3">
+                    <p class="image-description"><b>Add Check-up Record</b></p>
+                </div>
+                <div class="image">
+                    <img src="editcheckup record.PNG" alt="Image 4">
+                    <p class="image-description"><b>Edit Check-up Record</b></p>
+                </div>
+            </div>
+            <p><b>Add Check Up Record </b>- Allows users to input new medical check-up or examination details into the system, creating new check-up records</p>
+            <p><b>Edit Check Up Record </b>- Enables users to modify existing check-up records within the system, ensuring accurate and up-to-date information.</p>
+        </div>
+
+        <div class="section">
+            <div class="image-grid">
+                <div class="image">
+                    <img src="deletecheckup.PNG" alt="Image 3">
+                    <p class="image-description"><b>Delete Check up Record</b></p>
+                </div>
+                <div class="image">
+                    <img src="exportcheckup.PNG" alt="Image 4">
+                    <p class="image-description"><b>Export Check Up Table</b></p>
+                </div>
+            </div>
+            <p><b>Delete Check Up Record </b>- Allows user to delete record using the check_up id.</p>
+            <p><b>Export Check Up Record </b>- Opens excel file with the exported data of the record from the datagrid.</p>
+
+        </div>   
+
+        <div class="section">
+            <div class="section-title">7: Equipment Page</div>
+            <p>Contains information about the medical equipment used, enabling efficient management, tracking, and maintenance of the devices utilized in the healthcare setting.</p>
+            <div class="image">
+                <img src="equipments.PNG" alt="Image 2">
+            </div>
+        </div>
+
+        <div class="section">
+
+            <div class="image-grid">
+                <div class="image">
+                    <img src="addequipment.PNG" alt="Image 3">
+                    <p class="image-description"><b>Add Equipment Record</b></p>
+                </div>
+                <div class="image">
+                    <img src="editequipment.PNG" alt="Image 4">
+                    <p class="image-description"><b>Edit Equipment Record</b></p>
+                </div>
+            </div>
+            <p><b>Add Equipment Record </b>-  Allow user to add new equipment record to the table.</p>
+            <p><b>Edit Equipment Record </b>- Enables user to edit the record inside the table</p>
+
+        </div>
+
+        <div class="section">
+            <div class="image-grid">
+                <div class="image">
+                    <img src="deleteequipment.PNG" alt="Image 3">
+                    <p class="image-description"><b>Delete Equipment Record</b></p>
+                </div>
+                <div class="image">
+                    <img src="exportcheckup.PNG" alt="Image 4">
+                    <p class="image-description"><b>Export Equipment Table Record</b></p>
+                </div>
+            </div>
+            <p><b>Delete Equipment Record </b>- Allow user to delete a record using the equipment_id.</p>
+            <p><b>Export Equipment Table Record </b>- Opens excel file with the exported data of the record from the datagrid.</p>
+        </div>
+
+        <div class="section">
+            <div class="section-title">8: Patients Page</div>
+            <p>Stores essential information about registered patients, facilitating comprehensive management and easy access to patient records for healthcare professionals.</p>
+            <div class="image">
+                <img src="patients.PNG" alt="Image 2">
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="image-grid">
+                <div class="image">
+                    <img src="addpatient.PNG" alt="Image 3">
+                    <p class="image-description"><b>Add Patient Record</b></p>
+                </div>
+                <div class="image">
+                    <img src="editpatient.PNG" alt="Image 4">
+                    <p class="image-description"><b>Edit Patient Record</b></p>
+                </div>
+            </div>
+            <p><b>Add Patient Record </b>- Allows user to add new patient record in the table.</p>
+            <p><b>Edit Patient Record </b>- Enables user to edit the patient record in the table.</p>
+        </div>
+
+        <div class="section">
+            <div class="image-grid">
+                <div class="image">
+                    <img src="deletepatient.PNG" alt="Image 3">
+                    <p class="image-description"><b>Delete Patient Record</b></p>
+                </div>
+                <div class="image">
+                    <img src="exportpatients.PNG" alt="Image 4">
+                    <p class="image-description"><b>Export Patient Table Record</b></p>
+                </div>
+            </div>
+            <p><b>Delete Patient Record </b>- Allows user to delete patient record using the id_patient.</p>
+            <p><b>Export Patient Table Record </b>- Opens excel file with the exported data of the record from the datagrid.</p>
+        </div>
+
+        <div class="section">
+            <div class="section-title">9: Medicines Page</div>
+            <p> Tracks information about medications utilized within the system, aiding in the organization and administration of medicines in the healthcare environment.</p>
+            <div class="image">
+                <img src="medicines.PNG" alt="Image 2">
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="image-grid">
+                <div class="image">
+                    <img src="addmedicines.PNG" alt="Image 3">
+                    <p class="image-description"><b>Add Medicine Record</b></p>
+                </div>
+                <div class="image">
+                    <img src="editmedicine.PNG" alt="Image 4">
+                    <p class="image-description"><b>Edit Medicine Record</b></p>
+                </div>
+            </div>
+            <p><b>Add Medicine Record </b>- Allows user to add medicine record to the table.</p>
+            <p><b>Edit Medicine Record </b>- Enables user to edit the medicine record in the table.</p>
+        </div>
+
+        <div class="section">
+            <div class="image-grid">
+                <div class="image">
+                    <img src="deletemedicine.PNG" alt="Image 3">
+                    <p class="image-description"><b>Delete Medicines Record</b></p>
+                </div>
+                <div class="image">
+                    <img src="exportmedicine.PNG" alt="Image 4">
+                    <p class="image-description"><b>Export Medicine Table Record</b></p>
+                </div>
+            </div>
+            <p><b>Delete Medicine Record </b>- Allows user to delete medicine record using med_id.</p>
+            <p><b>Export Medicine Table Record </b>- Opens excel file with the exported data of the record from the datagrid.</p>
+        </div>   
+
+        <div class="section">
+            <div class="section-title">10: Treatment Types Page</div>
+            <p>Categorizes and manages different types of treatments available, allowing users to easily identify and access specific treatment options within the system.
+            </p>
+            <div class="image">
+                <img src="treatmenttypes.PNG" alt="Image 2">
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="image-grid">
+                <div class="image">
+                    <img src="addtreatment.PNG" alt="Image 3">
+                    <p class="image-description"><b>Add Treatment Type Record</b></p>
+                </div>
+                <div class="image">
+                    <img src="exporttreatment.PNG" alt="Image 4">
+                    <p class="image-description"><b>Export Treatment Table Record</b></p>
+                </div>
+            </div>
+            <p><b>Add Treatment Type </b>- Allows user to add record to the table treatments</p>
+            <p><b>Export Treatment Type Table </b>- Opens excel file with the exported data of the record from the datagrid.</p>
+        </div>
+        <p><br><br><br></p>
+        <h1><u>Summary and Conclusion</u></h1>
+
+        <div class="section">
+            <div class="section-title">Summary:</div>
+            <p>&nbsp&nbsp&nbsp&nbsp&nbsp The system is equipped with CRUD (Create, Read, Update, Delete) functionality and the ability to export data to Excel. Users are required to create an account and log in using their credentials. The system consists of various tables, including Add Table, Check Up, Equipments, Patients, Medicines, and Treatment Types. Users can perform actions such as adding, editing, deleting, and exporting data within these tables. The system is designed to be user-friendly and easy to navigate.</p>
+        <div class="section">
+            <div class="section-title">Conclusion:</div>
+            <p>&nbsp&nbsp&nbsp&nbsp&nbsp In conclusion, the user's manual provides a comprehensive guide to using the system effectively. By following the instructions outlined in the manual, users can take advantage of the system's CRUD capabilities and export data to Excel for further analysis. The login process ensures security and personalized access to the system. The different tables within the system allow users to manage and track various aspects such as check-ups, equipment, patients, medicines, and treatment types. Overall, the system aims to enhance productivity and streamline workflow organization in a user-friendly manner. With this user's manual, users will be equipped with the necessary knowledge to navigate and utilize the system efficiently.</p>
+</body>
+</html>

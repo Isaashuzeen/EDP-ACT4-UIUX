@@ -9,7 +9,7 @@ Module Module_public
 
     Public currentDate As DateTime = DateTime.Now
     Public strpassword = "yeribabe"
-    Public xlsPath As String = System.IO.Directory.GetCurrentDirectory & "\..\..\dataXls\TEMPLATE\"
+    Public xlsPath As String = System.IO.Directory.GetCurrentDirectory & "\..\..\dataXls\Template\"
     Public xlsFiles As String = System.IO.Directory.GetCurrentDirectory & "\..\..\dataXls\"
 
     Public Sub Connect_to_DB()

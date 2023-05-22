@@ -163,7 +163,7 @@ Partial Class Form8
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.DataGridView1)
         Me.Name = "Form8"
-        Me.Text = "Form8"
+        Me.Text = "Treatment Types"
         Me.Panel2.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()

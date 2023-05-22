@@ -1,4 +1,5 @@
-﻿Public Class Form3
+﻿Imports System.Diagnostics
+Public Class Form3
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Panel1.Visible = True
         Me.Hide()
@@ -57,5 +58,4 @@
         Me.Hide()
         Form9.Show()
     End Sub
-
 End Class

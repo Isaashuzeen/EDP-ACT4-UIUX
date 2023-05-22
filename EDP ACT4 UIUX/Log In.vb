@@ -79,4 +79,7 @@ Public Class Form1
         Label6.Hide()
     End Sub
 
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        Process.Start("C:\xampp\htdocs\output\UsersManual\UsersManual.html")
+    End Sub
 End Class

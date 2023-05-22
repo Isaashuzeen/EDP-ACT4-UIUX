@@ -36,6 +36,7 @@ Partial Class Form1
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.Button8 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -131,6 +132,7 @@ Partial Class Form1
         '
         'Spas
         '
+        Me.Spas.BackColor = System.Drawing.Color.SeaShell
         Me.Spas.BackgroundImage = Global.EDP_ACT4_UIUX.My.Resources.Resources.eye
         Me.Spas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Spas.FlatAppearance.BorderSize = 0
@@ -139,7 +141,7 @@ Partial Class Form1
         Me.Spas.Name = "Spas"
         Me.Spas.Size = New System.Drawing.Size(21, 21)
         Me.Spas.TabIndex = 9
-        Me.Spas.UseVisualStyleBackColor = True
+        Me.Spas.UseVisualStyleBackColor = False
         '
         'Label3
         '
@@ -181,6 +183,19 @@ Partial Class Form1
         Me.Label6.Text = "Please Enter your Password"
         Me.Label6.Visible = False
         '
+        'Button8
+        '
+        Me.Button8.BackColor = System.Drawing.Color.LightYellow
+        Me.Button8.FlatAppearance.BorderSize = 0
+        Me.Button8.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
+        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button8.Location = New System.Drawing.Point(353, 306)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(115, 21)
+        Me.Button8.TabIndex = 14
+        Me.Button8.Text = "User Manual"
+        Me.Button8.UseVisualStyleBackColor = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -189,6 +204,7 @@ Partial Class Form1
         Me.BackgroundImage = Global.EDP_ACT4_UIUX.My.Resources.Resources._27374038_7283496
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Button8)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Spas)
@@ -226,4 +242,5 @@ Partial Class Form1
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
+    Friend WithEvents Button8 As Button
 End Class

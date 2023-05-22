@@ -65,42 +65,75 @@ Public Class Form6
     End Sub
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
-        ' Create a new Excel application
+        ' Load the template file
+        Dim templatePath As String = "C:\Users\USER\source\repos\EDP ACT4 UIUX\EDP ACT4 UIUX\dataXls\Template\template.xlsx"
         Dim excelApp As New Excel.Application()
         excelApp.Visible = True
-
-        ' Create a new workbook
-        Dim excelWorkbook As Excel.Workbook = excelApp.Workbooks.Add()
+        Dim excelWorkbook As Excel.Workbook = excelApp.Workbooks.Open(templatePath)
         Dim excelWorksheet As Excel.Worksheet = CType(excelWorkbook.Worksheets(1), Excel.Worksheet)
 
-        ' Write the column headers to the worksheet
+        ' Write the table name in the worksheet
+        excelWorksheet.Cells(1, 1) = "Table Name: YourTableName"
+
+        ' Write the column headers to the worksheet starting from row 7
         For i As Integer = 0 To DataGridView1.Columns.Count - 1
-            excelWorksheet.Cells(1, i + 1) = DataGridView1.Columns(i).HeaderText
+            excelWorksheet.Cells(7, i + 1) = DataGridView1.Columns(i).HeaderText
         Next
 
-        ' Write the data rows to the worksheet
+        ' Write the data rows to the worksheet starting from row 8
         For i As Integer = 0 To DataGridView1.Rows.Count - 1
             For j As Integer = 0 To DataGridView1.Columns.Count - 1
                 Dim cellValue As Object = DataGridView1.Rows(i).Cells(j).Value
                 If cellValue IsNot Nothing AndAlso cellValue IsNot DBNull.Value Then
-                    excelWorksheet.Cells(i + 2, j + 1) = cellValue.ToString()
+                    excelWorksheet.Cells(i + 8, j + 1) = cellValue.ToString()
                 Else
-                    excelWorksheet.Cells(i + 2, j + 1) = ""
+                    excelWorksheet.Cells(i + 8, j + 1) = ""
                 End If
             Next
         Next
 
-        ' Autofit the columns
-        excelWorksheet.Columns.AutoFit()
+        ' Format the data range with borders
+        Dim lastRow As Integer = DataGridView1.Rows.Count + 7
+        Dim lastColumn As Integer = DataGridView1.Columns.Count
+        Dim dataRange As Excel.Range = excelWorksheet.Range("A7", ConvertToLetters(lastColumn) & lastRow)
+        dataRange.Borders.LineStyle = Excel.XlLineStyle.xlContinuous
 
+        ' Autofit the columns
+        Dim columnsRange As Excel.Range = excelWorksheet.Range("A1", ConvertToLetters(lastColumn) & lastRow)
+        columnsRange.Columns.AutoFit()
+
+        ' Save the modified workbook
+        Dim savePath As String = "C:\Users\USER\source\repos\EDP ACT4 UIUX\EDP ACT4 UIUX\dataXls\"
+        Dim currentDate As DateTime = DateTime.Now
+        Dim filename As String = "Patient_Data_" & currentDate.ToString("MM-dd-yy_HH-mm-ss") & ".xlsx"
+        excelWorkbook.SaveAs(savePath & filename, Excel.XlFileFormat.xlOpenXMLWorkbook)
+        MessageBox.Show("Export Successful")
         ' Release Excel objects from memory
+
         ReleaseObject(excelWorksheet)
         ReleaseObject(excelWorkbook)
         ReleaseObject(excelApp)
 
-        ' Display success message
-        MessageBox.Show("Export successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
     End Sub
+
+    Private Function ConvertToLetters(ByVal number As Integer) As String
+        number -= 1
+        Dim result As String = String.Empty
+
+        If 26 > number Then
+            result = Chr(number + 65)
+        Else
+            Dim column As Integer
+
+            Do
+                column = number Mod 26
+                number = (number \ 26) - 1
+                result = Chr(column + 65) + result
+            Loop Until number < 0
+        End If
+
+        Return result
+    End Function
 
     Private Sub ReleaseObject(ByVal obj As Object)
         Try
